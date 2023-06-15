@@ -312,23 +312,12 @@ function fimDoJogo() {
 
   aviso.textContent = "Você conseguiu " + pontos + " " + pont;
 
-  // img.src = 'fotomarvel.jpg'
-
-  // a.textContent = ""
-  // b.textContent = ""
-  // c.textContent = ""
-  // d.textContent = ""
-
-  // a.setAttribute('value', '0')
-  // b.setAttribute('value', '0')
-  // c.setAttribute('value', '0')
-  // d.setAttribute('value', '0')
-
   // OCULTAR O ARTICLE DA QUESTAO
   articleQuestoes.style.display = "none";
 
-  setTimeout(function () {
-    pontos = 0; // zerar placar
-    location.reload();
-  }, 2000);
+  document.getElementById("reiniciarQuiz").style.display = "block";
 }
+
+document.getElementById("reiniciarQuiz").addEventListener("click", function () {
+  location.reload();
+});
