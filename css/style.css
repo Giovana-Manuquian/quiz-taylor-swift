@@ -32,14 +32,6 @@ section {
     align-items: center;
 }
 
-/* h1 {
-    text-align: center;
-    font-size: 1rem;
-    margin: 0.625rem;
-    color: rgb(48, 47, 47);
-    font-style: "Open Sans";
-} */
-
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1rem;
@@ -56,7 +48,6 @@ h2 {
     align-items: center;
     justify-content: space-between;
     background: whitesmokez;
-    border: 1px solid rgba(167, 167, 167, 0.562);
 }
 
 #numQuestao {
@@ -93,6 +84,7 @@ h2 {
     font-size: 1rem;
     color: #0a0a0a;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgba(167, 167, 167, 0.562);
 }
 
 .questoes ol li:hover {
