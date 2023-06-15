@@ -118,6 +118,19 @@ h2 {
     font-size: 1rem;
 }
 
+#btn-reiniciar {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+
+#btn-reiniciar:hover {
+    background: rgba(0, 0, 0, 0.788);
+    color: whitesmoke;
+}
+
 /* ANIMACAO */
 
 /* Animar o input */
