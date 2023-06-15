@@ -301,6 +301,14 @@ function verificarSeAcertou(nQuestao, resposta) {
   desbloquearAlternativas();
 }
 
+function reiniciarQuiz() {
+  pontos = 0; // Zerar os pontos
+  proximaQuestao(1); // Reiniciar o quiz começando pela primeira questão
+  instrucoes.textContent = ""; // Limpar a mensagem de fim de jogo
+  articleQuestoes.style.display = "block"; // Exibir novamente o article das questões
+  document.getElementById("btn-reiniciar").style.display = "none"; // Ocultar o botão de reiniciar
+}
+
 function fimDoJogo() {
   instrucoes.textContent = "Fim de Jogo!";
   numQuestao.textContent = "";
@@ -308,16 +316,12 @@ function fimDoJogo() {
   let pont = "";
   pontos == 0 ? (pont = "ponto") : (pont = "pontos");
 
-  pergunta.textContent = "Você conseguiu " + pontos + " " + pont;
+  pergunta.textContent = "Você conseguiu: " + pontos + " " + pont;
 
-  aviso.textContent = "Você conseguiu " + pontos + " " + pont;
+  aviso.textContent = "Você conseguiu: " + pontos + " " + pont;
 
   // OCULTAR O ARTICLE DA QUESTAO
   articleQuestoes.style.display = "none";
 
-  document.getElementById("reiniciarQuiz").style.display = "block";
+  document.getElementById("btn-reiniciar").style.display = "block";
 }
-
-document.getElementById("reiniciarQuiz").addEventListener("click", function () {
-  location.reload();
-});
