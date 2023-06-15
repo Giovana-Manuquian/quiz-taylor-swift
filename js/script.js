@@ -318,7 +318,7 @@ function fimDoJogo() {
 
   pergunta.textContent = "Você conseguiu: " + pontos + " " + pont;
 
-  aviso.textContent = "Você conseguiu: " + pontos + " " + pont;
+  //aviso.textContent = "Você conseguiu: " + pontos + " " + pont;
 
   // OCULTAR O ARTICLE DA QUESTAO
   articleQuestoes.style.display = "none";
